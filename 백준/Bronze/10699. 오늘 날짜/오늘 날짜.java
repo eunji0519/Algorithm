@@ -1,13 +1,12 @@
-import java.io.IOException;
-import java.util.Calendar;
+import java.time.LocalDate;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 
-		Calendar now = Calendar.getInstance();
-
-		System.out.printf("%tF\n", now);
+		LocalDate now = LocalDate.now();
+		
+		System.out.println(now);
 
 	}
 }
