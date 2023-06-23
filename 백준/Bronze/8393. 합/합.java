@@ -12,10 +12,10 @@ public class Main {
 		int n = Integer.parseInt(s);
 		br.close();
 
-		int i, sum = 0;
+		int sum = 0;
 		
 		if (n >= 1 && n <= 10000) {
-			for (i = 1; i <= n; i++) {
+			for (int i = 1; i <= n; i++) {
 				sum += i;
 			}
 		} else {
