@@ -28,7 +28,7 @@ public class Main {
 				if ((a >= 1 && a <= 1000000) && (b >= 1 && b <= 10)) {
 					sum += a * b;
 				} else {
-					System.out.println("입력범위를 벗어났습니다.");
+					System.out.println("입력범위를 벗어났습니다");
 				}
 			}
 			// 만약,영수증의 총 금액과 계산한 값이 같다면?
@@ -40,7 +40,7 @@ public class Main {
 			}
 			br.close();
 		} else {
-			System.out.println("총 금액을 벗어났습니다.");
+			System.out.println("총 금액을 벗어났습니다");
 		}
 	}
 }
