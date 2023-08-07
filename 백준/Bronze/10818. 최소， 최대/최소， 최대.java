@@ -22,7 +22,6 @@ public class Main {
 		int min = 0;
 		int max = 0;
 		
-        // 기본 값 입력
 		int a = Integer.parseInt(st.nextToken());
 		
 		min = a;
@@ -35,11 +34,9 @@ public class Main {
 			int b = Integer.parseInt(st.nextToken());
 
 			// 최소, 최대 비교
-			if (min > b)
-				min = b;
-
-			if (max < b)
-				max = b;
+			min = min < b ? min : b;
+			max = max > b ? max : b;
+			
 		}
 
 		// 결과 출력
