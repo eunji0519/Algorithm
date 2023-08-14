@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashSet;
 
 public class Main {
 
@@ -8,20 +9,18 @@ public class Main {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		int[] arr = new int[42];
-		int cnt = 0;
-
+		HashSet<Integer> set = new HashSet<Integer>();
+		
 		for (int i = 0; i < 10; i++) {
+			
 			int N = Integer.parseInt(br.readLine());
 			int mod = N % 42;
-			arr[mod]++;
+			
+			set.add(mod);
+			
 		}
 
-		for (int i = 0; i < arr.length; i++) {
-			if (arr[i] > 0)
-				cnt++;
-		}
-		System.out.println(cnt);
+		System.out.println(set.size());
 	}
 
 }
